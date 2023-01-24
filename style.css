@@ -1,0 +1,59 @@
+:root {
+    --background: #00030C;
+    --greyscale-00: #FFFFFF;
+    --greyscale-50: #C0C0C0;
+    --interaction: #167BF7; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--greyscale-00);
+}
+
+.background-image {
+    background-image: url("./assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.banner-principal {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.button-primary {
+    background-color: var(--interaction);
+    border-radius: 8px;
+
+    display: block;
+
+    height: 56px;
+    width: auto;
+
+    text-decoration: none;
+    color: var(--greyscale-00);
+}
+
+.button-secundary {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--greyscale-00);
+
+    display: block;
+
+    height: 56px;
+
+    text-decoration: none;
+    color: var(--greyscale-00);
+}
+
+.banner-principal-aviso {
+    display: block;
+    text-align: center;
+}
