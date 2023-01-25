@@ -2,7 +2,9 @@
     --background: #00030C;
     --greyscale-00: #FFFFFF;
     --greyscale-50: #C0C0C0;
-    --interaction: #167BF7; 
+    --greyscale-100: #FFFFFF14;
+    --interaction-00: #167BF7; 
+    --interaction-50: #3C92FA;
 
     --main-font: 'Inter';
 }
@@ -120,7 +122,7 @@ body {
 /* Buttons */
 
 .button-primary {
-    background-color: var(--interaction);
+    background-color: var(--interaction-00);
     border-radius: 8px;
     border: none;
     padding: 0 16px 0 16px;
@@ -143,6 +145,10 @@ body {
     cursor: pointer;
 }
 
+.button-primary:hover {
+    background-color: var(--interaction-50);
+}
+
 .button-secundary {
     background-color: transparent;
     border-radius: 8px;
@@ -158,4 +164,49 @@ body {
     color: var(--greyscale-00);
 
     cursor: pointer;
+}
+
+.button-secundary:hover {
+    background-color: var(--greyscale-100);
+}
+
+/* Footer */
+
+.rodape {
+    text-align: center;
+    padding: 144px 120px 96px 120px;
+}
+
+.rodape-logo {
+    width: 102px;
+}
+
+.rodape-lista {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 24px;
+
+    margin: 40px 0px 24px 0px;
+}
+
+.link-item {
+    text-decoration: none;
+    color: var(--greyscale-00);
+    font-size: 16px;
+    font-weight: 400;
+
+    cursor: pointer;
+}
+
+.link-item:hover {
+    color: var(--interaction-00);
+}
+
+.rodape-texto {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--greyscale-50);
+
+    margin-bottom: 24px;
 }
