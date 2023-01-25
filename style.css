@@ -3,6 +3,8 @@
     --greyscale-00: #FFFFFF;
     --greyscale-50: #C0C0C0;
     --interaction: #167BF7; 
+
+    --main-font: 'Inter';
 }
 
 * {
@@ -12,32 +14,57 @@
 
 body {
     background-color: var(--background);
+
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+
     color: var(--greyscale-00);
+}
+
+.banner-principal {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .background-image {
     background-image: url("./assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
+    text-align: center;
 }
 
-.banner-principal {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 40% 60%;
+.banner-principal-box {
+    margin: 0 120px;
+}
+
+.banner-principal-titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.banner-principal-imagem {
+    margin: 24px 0 56px 0;
+    width: 348px;
 }
 
 .button-primary {
     background-color: var(--interaction);
     border-radius: 8px;
 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 56px;
     width: auto;
 
     text-decoration: none;
     color: var(--greyscale-00);
+
+    margin-bottom: 16px;
 }
 
 .button-secundary {
@@ -45,7 +72,9 @@ body {
     border-radius: 8px;
     border: 1px solid var(--greyscale-00);
 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 56px;
 
@@ -56,4 +85,34 @@ body {
 .banner-principal-aviso {
     display: block;
     text-align: center;
+
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--greyscale-50);
+
+    margin-top: 12px;
+}
+
+.container-secundario {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    align-items: center;
+    margin: 0 120px;
+}
+
+.container-secundario-imagem {
+    width: 80%;
+}
+
+.container-secundario-titulo {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+.container-secundario-descricao {
+    color: var(--greyscale-50);
 }
