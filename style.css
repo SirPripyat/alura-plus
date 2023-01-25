@@ -22,6 +22,8 @@ body {
     color: var(--greyscale-00);
 }
 
+/* Banner principal */
+
 .banner-principal {
     height: 100vh;
     display: grid;
@@ -50,38 +52,6 @@ body {
     width: 348px;
 }
 
-.button-primary {
-    background-color: var(--interaction);
-    border-radius: 8px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 56px;
-    width: auto;
-
-    text-decoration: none;
-    color: var(--greyscale-00);
-
-    margin-bottom: 16px;
-}
-
-.button-secundary {
-    background-color: transparent;
-    border-radius: 8px;
-    border: 1px solid var(--greyscale-00);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 56px;
-
-    text-decoration: none;
-    color: var(--greyscale-00);
-}
-
 .banner-principal-aviso {
     display: block;
     text-align: center;
@@ -92,6 +62,8 @@ body {
 
     margin-top: 12px;
 }
+
+/* Banner secundário */ 
 
 .container-secundario {
     height: 100vh;
@@ -115,4 +87,75 @@ body {
 
 .container-secundario-descricao {
     color: var(--greyscale-50);
+    margin: 0 72px 16px 0;
+}
+
+/* Dispositivos */
+
+.dispositivos {
+    text-align: center;
+    margin: 0 120px;
+}
+
+.dispositivos-titulo {
+    font-size: 48px;
+    font-weight: 700;
+
+    margin-bottom: 40px;
+}
+
+.dispositivos-lista {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.lista-titulo {
+    font-size: 32px;
+    font-weight: 700;
+
+    margin-top: 16px;
+}
+
+/* Buttons */
+
+.button-primary {
+    background-color: var(--interaction);
+    border-radius: 8px;
+    border: none;
+    padding: 0 16px 0 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 56px;
+    width: auto;
+
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--greyscale-00);
+
+    margin-bottom: 16px;
+
+    cursor: pointer;
+}
+
+.button-secundary {
+    background-color: transparent;
+    border-radius: 8px;
+    border: 1px solid var(--greyscale-00);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 56px;
+
+    text-decoration: none;
+    color: var(--greyscale-00);
+
+    cursor: pointer;
 }
